@@ -36,10 +36,11 @@ namespace GradeBook.UserInterfaces
             if (parts.Length != 4)
             {
                 Console.WriteLine("Command not valid, Create requires a name, type of gradebook, if it's weighted (true / false).");
+                return;
             }
-            var name = parts[0];
-            var type = parts[1];
-            var isWeighted = Boolean.Parse(parts[2]);
+            var name = parts[1];
+            var type = parts[2];
+            var isWeighted = bool.Parse(parts[3]);
             //BaseGradeBook gradeBook = new BaseGradeBook(name);
             //Console.WriteLine("Created gradebook {0}.", name);
             BaseGradeBook gradeBook = null;

@@ -136,7 +136,7 @@ namespace GradeBookTests
             var constructor = gradebook.GetConstructors().FirstOrDefault();
 
             // Assert a constructor was found
-            Assert.True(constructor != null, "No constructor found for GradeBook.GradeBooks.StardardGradeBook.");
+            Assert.True(constructor != null, "No constructor found for GradeBook.GradeBooks.RankedGradeBook.");
 
             // Get GradeBookType from the GradeBook.Enums namespace
             var gradebookEnum = (from assembly in AppDomain.CurrentDomain.GetAssemblies()

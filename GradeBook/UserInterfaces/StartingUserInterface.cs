@@ -44,11 +44,11 @@ namespace GradeBook.UserInterfaces
             //BaseGradeBook gradeBook = new BaseGradeBook(name);
             //Console.WriteLine("Created gradebook {0}.", name);
             BaseGradeBook gradeBook = null;
-            if (name == "standard")
+            if (type == "standard")
             {
                  gradeBook = new StandardGradeBook(name,isWeighted);
             }
-            else if (name == "ranked")
+            else if (type == "ranked")
             {
                  gradeBook = new RankedGradeBook(name,isWeighted);
             }
